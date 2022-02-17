@@ -19,7 +19,7 @@ public class Divide {
         //Создаем два массива для четных и нечетных чисел
         int[] evenArray = new int[array.length];
         int[] oddArray = new int[array.length];
-        int even = 0, odd = 0;
+        int even = 0, odd = 0, sum = 0, sum2= 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] % 2 == 0) {
                 evenArray[even] = array[i];
@@ -27,8 +27,12 @@ public class Divide {
             } else {
                 oddArray[odd] = array[i];
                 odd++;
+                //int sum2 = 0 ;
+                //sum2 += oddArray[odd];
             }
         }
+
+
         //выводим массив с четными числами
         System.out.print("Выводим массив с четными числами: ");
         for (int i = 0; i < evenArray.length; i++) {
@@ -39,6 +43,7 @@ public class Divide {
                     System.out.print(evenArray[i] + " ");
                 }
             }
+            sum += evenArray[i];
         }
         System.out.println();
         //выводим массив с нечетными числами
@@ -53,8 +58,12 @@ public class Divide {
             }
         }
 
+        System.out.println("Среднее =" + sum/even);
+
         }
-    }
+
+        }
+
 
 
 
