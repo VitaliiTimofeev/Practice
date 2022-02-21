@@ -10,13 +10,13 @@ public class Program {
 
         // Вторая подзадача Случайности расходятся
 
-        Divide divide = new Divide();
-        divide.divideArray();
+        //Divide divide = new Divide();
+        //divide.divideArray();
 
         // Третья подзадача Противоположности притягиваются
 
-        //Task3 task3 = new Task3();
-        //task3.magnitDiffThings();
+        Opposites opposites = new Opposites();
+        opposites.attractOpposites();
     }
 }
 
